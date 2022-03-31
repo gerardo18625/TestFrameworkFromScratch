@@ -11,7 +11,7 @@ public class OverviewTabTests extends BaseTestClass{
   public void userNameIsCorrectOnOverviewTab(){
 
     driver.get(BASE_URL + user);
-    String actualUsername = driver.findElement(By.xpath("//h1/span[2]")).getText();
+    String actualUsername = driver.findElement(By.xpath("//h1/span[1]")).getText();
     assertEquals(actualUsername, user,"Username does not match");
 
 
